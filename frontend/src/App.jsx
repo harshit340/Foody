@@ -7,7 +7,7 @@ import Home from './pages/Home/Home';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import Footer from './components/Footer/Footer';
 import LoginPopup from './components/LoginPopup/LoginPopup';
-//import Header from './components/Header/Header';
+
 function App() {
     const [showLogin,setShowLogin]=useState(false)
 
