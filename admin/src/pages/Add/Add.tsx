@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState } from 'react'
 import './Add.css'
 import { assets } from '../../assets/assets'
 import axios from 'axios';
@@ -69,6 +69,7 @@ function Add({url}) {
         <div className="add-category flex-col">
           <p>Product category</p>
           <select onChange={onChangeHandler} name="category" >
+
             <option  value="Salad"></option>
             <option value="Rolls"></option>
             <option  value="Desert"></option>
@@ -77,6 +78,16 @@ function Add({url}) {
             <option value="Pure Veg"></option>
             <option value="Pasta"></option>
             <option value="Noodles"></option>
+
+            <option value="Salad">Salad</option>
+            <option value="Rolls">Rolls</option>
+            <option value="Desert">Desert</option>
+            <option value="Sandwitch">Sandwitch</option>
+            <option value="Cake">Cake</option>
+            <option value="Pure Veg">Pure Veg</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Noodles">Noodles</option>
+
           </select>
         </div>
         

@@ -19,11 +19,11 @@
     padding: 10px;
 }
 .add-category-price{
-    display: flex;
-    gap: 30px;
+    display:flex;
+    gap:30px;
 }
 .add-category-price select,.add-category-price input{
-    max-width: 120px;
+    max-width:120px;
     padding: 10px;
     color:black;
 }
