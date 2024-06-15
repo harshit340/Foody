@@ -3,7 +3,7 @@ import './Orders.css'
 function Orders() {
   return (
     <div>
-      orders
+      
     </div>
   )
 }
