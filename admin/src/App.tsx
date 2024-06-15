@@ -1,15 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Navbar from './components/Navbar/Navbar.tsx'
+import Sidebar from './components/Sidebar/Sidebar.tsx';
+import { Route, Routes} from 'react-router-dom';
+import Add from "./pages/Add/Add.tsx";
+import Orders from './pages/Orders/Orders.tsx';
+import List from './pages/List/List.tsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const url = 'http://localhost:4000'
 
   return (
-    <>
-      Aryan
-    </>
+    <div>
+      <ToastContainer/>
+      <Navbar/>
+      <hr />
+      <div className='app-content'>
+        <Sidebar/>
+        <Routes>
+          <Route path='/add' element={<Add url={url} />}/>
+          <Route path='/list' element={<List url={url} />}/>
+          <Route path='/orders' element={<Orders url={url} />}/>
+        </Routes>
+      </div>
+    </div>
   )
 }
 
