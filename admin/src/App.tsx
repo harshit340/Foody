@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar.tsx'
-import Sidebar from './components/Sidebar/Sidebar.tsx';
+import Navbar from './components/Navbar/Navbar.js'
+import Sidebar from './components/Sidebar/Sidebar.js';
 import { Route, Routes} from 'react-router-dom';
-import Add from "./pages/Add/Add.tsx";
+import Add from "./pages/Add/Add.jsx";
 import Orders from './pages/Orders/Orders.tsx';
-import List from './pages/List/List.tsx';
+import List from './pages/List/List.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const url = 'http://localhost:4000'
+  const url = 'http://localhost:3000'
 
   return (
     <div>

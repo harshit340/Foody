@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './Add.css'
 import { assets } from '../../assets/assets'
 import axios from 'axios';
@@ -43,6 +43,10 @@ function Add({url}) {
 
   }
 
+/*   useEffect(()=>{
+    console.log(data);
+  },[data])
+ */
   return (
     <div className='add'>
     <form  className="flex-col" onSubmit={onSubmitHandler}>
@@ -61,13 +65,13 @@ function Add({url}) {
         <p>Product description</p>
         <textarea onChange={onChangeHandler} value={data.description} name="description" rows={6} placeholder='Write content here'></textarea>
       </div>
-      <div className="add-category-price">
+      <div className="add-category-price" >
         <div className="add-category flex-col">
           <p>Product category</p>
           <select onChange={onChangeHandler} name="category" >
-            <option value="Salad"></option>
+            <option  value="Salad"></option>
             <option value="Rolls"></option>
-            <option value="Desert"></option>
+            <option  value="Desert"></option>
             <option value="Sandwitch"></option>
             <option value="Cake"></option>
             <option value="Pure Veg"></option>
