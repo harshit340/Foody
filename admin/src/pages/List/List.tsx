@@ -3,7 +3,8 @@ import './List.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 function List({url}) {
-
+  
+// first step is to fetch all the data from database by using useeffect and then make  a useState and store all the value in to setList and it will update to list and then use map function to use the data from list 
   
   const [list,setList] = useState([]);
 
