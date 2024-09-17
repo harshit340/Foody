@@ -37,9 +37,9 @@ function LoginPopup({setShowLogin}) {
     alert(response.data.message)
    }
   }
-    /* useEffect(()=>{
+    useEffect(()=>{
       console.log(data);
-    },[data]) */
+    },[data])
 
   return (
     <div className='login-popup'>
